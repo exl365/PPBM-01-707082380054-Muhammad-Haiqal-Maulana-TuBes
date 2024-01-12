@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".infodeveloper"
+    android:background="@drawable/backgrounddev">
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/segoeuib"
+        android:text="Latifa School Companion App"
+        android:layout_below="@id/circleImageView"
+        android:layout_centerHorizontal="true"
+         />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/dev"
+        app:civ_border_color="#FFFFFF"
+        app:civ_border_width="2dp"
+        app:civ_circle_background_color="#CCCCCC"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        />
+
+    <TextView
+        android:id="@+id/ket1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/judul"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/seguibl"
+        android:text="Muhammad Haiqal Maulana | 707082380054" />
+
+    <TextView
+        android:id="@+id/ket2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ket1"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/seguibl"
+        android:text="D4SM-45-01 | D4SM-X-47-01 " />
+
+    <TextView
+        android:id="@+id/ket3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ket2"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/seguibl"
+        android:text="PEMROGRAMAN PERANGKAT BERGERAK MULTIMEDIA " />
+
+</RelativeLayout>

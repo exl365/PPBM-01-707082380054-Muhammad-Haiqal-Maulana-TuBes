@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GalleryActivity"
+    android:background="@drawable/backgroundgaleri">
+
+    <com.ncorti.slidetoact.SlideToActView
+        android:id="@+id/slide1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="6dp"
+        app:area_margin="4dp"
+        app:animation_duration="250"
+        app:outer_color="@color/white"
+        app:inner_color="@color/Red"
+        app:border_radius="2dp"
+        app:text="Foto Kegiatan Sekolah"
+        app:text_size="20sp"
+        app:slider_height="80dp"
+        app:slider_locked="false"
+        app:bounce_on_start="true"
+        />
+
+    <com.ncorti.slidetoact.SlideToActView
+        android:id="@+id/slide2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/slide1"
+        android:elevation="6dp"
+        app:animation_duration="250"
+        app:area_margin="4dp"
+        app:border_radius="2dp"
+        app:bounce_on_start="true"
+        app:inner_color="@color/Red"
+        app:outer_color="@color/white"
+        app:slider_height="80dp"
+        app:slider_locked="false"
+        app:text="Visi Misi Dan Tujuan Sekolah"
+        app:text_size="20sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="100dp"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>

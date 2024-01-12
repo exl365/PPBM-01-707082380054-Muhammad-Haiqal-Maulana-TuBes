@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/activity_login.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    android:background="@drawable/img"
+    tools:context=".login">
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/segoeuib"
+        android:text="Latifa School App Companion"
+        android:textSize="20sp"
+        android:layout_marginTop="55dp"
+        android:layout_alignParentTop="true"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:src="@drawable/latifa_schoollogo"
+        android:id="@+id/logologin"
+        android:layout_below="@id/judul"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YAYASAN VILDANA MAULANA LATIFA"
+        android:layout_marginTop="10dp"
+        android:id="@+id/textopening1"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/nislogin"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/textopening1"
+        android:text="Official APP from PAUD/TK LATIFA KOTA BANDA ACEH"
+        android:id="@+id/textopening2"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/nislogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nomor Induk Siswa"
+        android:minHeight="48dp"
+        android:inputType="number"
+        android:layout_above="@id/katasandilogin"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/katasandilogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:layout_centerInParent="true"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/katasandilogin"
+        android:layout_marginTop="25dp"
+        android:text="Login" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttondaftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonlogin"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:text="Registrasi Disini" />
+
+
+</RelativeLayout>

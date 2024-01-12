@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".informasi"
+    android:background="@drawable/bgmainmenu">
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/segoeuib"
+        android:text="Latifa School Companion App"
+        android:layout_below="@id/circleImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/latifa_schoollogo"
+        app:civ_border_color="#FFFFFF"
+        app:civ_border_width="2dp"
+        app:civ_circle_background_color="#CCCCCC"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:id="@+id/ket1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/judul"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/seguibl"
+        android:text="Yayasan Vildana Maulana Latifa" />
+
+    <TextView
+        android:id="@+id/ket2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ket1"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/seguibl"
+        android:text="Berdiri Sejak Tahun 2011 Sampai Dengan Sekarang" />
+
+    <!-- LinearLayout with four CircleImageView arranged vertically -->
+    <LinearLayout
+        android:id="@+id/linearImages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ket2"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/yayasan1"
+                android:layout_centerHorizontal="true"
+                app:civ_border_color="#FFFFFF"
+                app:civ_border_width="2dp"
+                app:civ_circle_background_color="#CCCCCC" />
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img1"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/seguibl"
+                android:text="Ketua Yayasan"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="H. Husaini Marriem,S.H"
+                android:fontFamily="@font/segoeuib"
+                android:layout_below="@id/txt1"
+                android:layout_marginTop="5dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:gravity="center">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/yayasan2"
+                app:civ_border_color="#FFFFFF"
+                app:civ_border_width="2dp"
+                app:civ_circle_background_color="#CCCCCC"
+                 />
+
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wakil Yayasan"
+                android:fontFamily="@font/seguibl"
+                android:layout_below="@id/img2"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:id="@+id/txt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hj. Sri Wahyuni"
+                android:layout_below="@id/txt3"
+                android:fontFamily="@font/segoeuib"
+                android:layout_marginTop="5dp"/>
+        </RelativeLayout>
+
+        <!-- Add similar RelativeLayout for img3 and img4 with corresponding TextViews -->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearImages2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearImages"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/kepsek"
+                android:layout_centerHorizontal="true"
+                app:civ_border_color="#FFFFFF"
+                app:civ_border_width="2dp"
+                app:civ_circle_background_color="#CCCCCC" />
+
+            <TextView
+                android:id="@+id/txt5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img3"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/seguibl"
+                android:text="Kepala Sekolah"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/txt6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rohani, S.Pd"
+                android:fontFamily="@font/segoeuib"
+                android:layout_below="@id/txt5"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:gravity="center">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img4"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/operatorsekolah"
+                app:civ_border_color="#FFFFFF"
+                app:civ_border_width="2dp"
+                app:civ_circle_background_color="#CCCCCC"
+                />
+
+            <TextView
+                android:id="@+id/txt7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Operator Sekolah"
+                android:fontFamily="@font/seguibl"
+                android:layout_below="@id/img4"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:id="@+id/txt8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nurul Rahmah"
+                android:layout_below="@id/txt7"
+                android:fontFamily="@font/segoeuib"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:gravity="center">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img5"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/bendahara"
+                app:civ_border_color="#FFFFFF"
+                app:civ_border_width="2dp"
+                app:civ_circle_background_color="#CCCCCC"
+                />
+
+            <TextView
+                android:id="@+id/txt9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bendahara"
+                android:fontFamily="@font/seguibl"
+                android:layout_below="@id/img5"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:id="@+id/txt10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Queen Latifa"
+                android:layout_below="@id/txt9"
+                android:fontFamily="@font/segoeuib"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+        <!-- Add similar RelativeLayout for img3 and img4 with corresponding TextViews -->
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearImages3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearImages2"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/logorating"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/logorating"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/logorating"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/seguibl"
+                android:text="Rating Aplikasi"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginStart="30dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/logodev"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/logodev"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/dev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/logodev"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/seguibl"
+                android:text="Info Developer"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+
+        <!-- Add similar RelativeLayout for img3 and img4 with corresponding TextViews -->
+
+    </LinearLayout>
+</RelativeLayout>
